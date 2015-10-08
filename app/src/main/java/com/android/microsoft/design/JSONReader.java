@@ -43,9 +43,10 @@ public class JSONReader {
                 e1.printStackTrace();
             }
             try {
-                Log.d("Details-->%d", String.valueOf(jo_inside.getString("poetName")));
-                Log.d("Details-->", String.valueOf(jo_inside.getString("poemTitle")));
-                Log.d("Details-->", String.valueOf(jo_inside.getString("poemBody")));
+                Log.d("Details: ", "poetName = " + jo_inside.getString("poetName"));
+                Log.d("Details: ", "poemTitle = " + jo_inside.getString("poemTitle"));
+                //Log.d("Details: ", "poemBody = " + jo_inside.getString("poemBody").length());
+                Log.d("Details: ", "poemBody = " + jo_inside.getString("poemBody"));
 
             } catch (JSONException e1) {
                 e1.printStackTrace();
